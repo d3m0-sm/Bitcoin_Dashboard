@@ -44,6 +44,10 @@ namespace Bitcoin_Dashboard
 
         private void UserControl2_Load(object sender, EventArgs e)
         {
+
+            this.BackColor = Color.FromArgb(44, 43, 60);
+            chart1.BackColor = Color.FromArgb(44, 43, 60);
+
             fillArray(inputAnzahl);
             fillArray(outputAnzahl);
             timer1.Start();
@@ -150,6 +154,11 @@ namespace Bitcoin_Dashboard
         private void timer1_Tick(object sender, EventArgs e)
         {
             analyzeTransactions();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
