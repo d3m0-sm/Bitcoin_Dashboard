@@ -47,6 +47,7 @@ namespace Bitcoin_Dashboard
 
             this.BackColor = Color.FromArgb(44, 43, 60);
             chart1.BackColor = Color.FromArgb(44, 43, 60);
+            chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
 
             fillArray(inputAnzahl);
             fillArray(outputAnzahl);
